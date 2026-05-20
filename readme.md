@@ -69,7 +69,9 @@ Persisted using Docker Volumes.
 ## 🐳 Run with Docker
 
 ### 1. Build Image
-```bash
+
+# bash commands
+
 docker build -t etl-project:v1 .
 
 2. Run Container (with Volume)
@@ -78,10 +80,13 @@ docker run --name etl_container -v D:\docker\etl_docker\data:/app/data etl-proje
 
 
 📸 Screenshots
+
 🖥️ 1. Running the ETL Pipeline in Docker
 
-Shows the container execution and printed transformed data from the API.
-![ printed transformed data from the API](./screenshots/printed transformed data from the API.png)
+ Shows the container execution and printed transformed data from the API.
+ 
+ ![printed transformed data from the API](screenshots/printed_transformed_data_from_the_API.png)
+
 
 📂 2. Generated Database File on Host Machine
 
@@ -89,16 +94,23 @@ Displays the users.db file created inside the local data/ folder using Docker Vo
 
 🗄️ 3. Inspecting Data inside SQLite Database
 
+
 Shows the structured data inside SQLite using DB Browser or equivalent tool.
-![file created inside the local data folder using Docker Volume](./screenshots/file created inside the local data folder using Docker Volume.png)
+
+![file created inside the local data folder using Docker Volume](screenshots/file_created_inside_the_local_data_folder_using_Docker_Volume.png)
+
 🐳 4. Docker Image Successfully Built
 
 Confirms that the ETL project image was created successfully.
-![ ETL project image was created successfully](./screenshots/ETL project image was created successfully.png)
+
+![ ETL project image was created successfully](screenshots/ETL_project_image_was-created_successfully.png)
+
 📦 5. Docker Container Execution
 
 Shows the container lifecycle and successful execution of the ETL pipeline.
-![  container lifecycle and successful execution of the ETL pipeline](./screenshots/the container lifecycle and successful execution of the ETL pipeline.png)
+
+![  container lifecycle and successful execution of the ETL pipeline](screenshots/the_container_lifecycle_and_successful_execution_of_the_ETL_pipeline.png)
+
 💡 Key Concept
 
 Docker ensures:
@@ -106,10 +118,13 @@ Docker ensures:
 Same environment across all machines
 No dependency issues
 Easy deployment of ETL pipelines
+
 📌 Notes
+
 Database file is persisted using Docker Volumes
 Container is stateless; data is stored outside container
 Each run produces consistent ETL output
+
 👨‍💻 Author
 
-mohamed shahat.
+[mohamed shahat.](https://github.com/mohameddshahat)
